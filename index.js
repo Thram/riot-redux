@@ -2,7 +2,7 @@
  * Created by thram on 16/06/16.
  */
 import configureStore from "./store";
-import {payload as mapPayload, actions as mapActions} from "toolbox/maps";
+import {payload as mapPayload, actions as mapActions} from "maps";
 
 export default {
   init: function () {
