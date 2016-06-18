@@ -1,2 +1,2 @@
 # riot-redux
-Redux implementation for RiotJS
+Redux implementation for RiotJS as a Mixin
