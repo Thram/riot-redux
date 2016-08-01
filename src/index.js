@@ -54,6 +54,8 @@ export default {
 
     tag.refresh = ()=> tag.update({state: tag.opts.state || tag.INIT_STATE});
 
+    tag.value = () => tag.state;
+
     tag.on('unmount', () => tag.unsubscribe());
   }
 };
