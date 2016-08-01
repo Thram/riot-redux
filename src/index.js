@@ -35,9 +35,10 @@ export default {
     };
 
     tag.actions = mapActions({
-      id      : `${tag.opts.name || (tag.root.tagName.toLowerCase() + '-' + tag._riot_id)}`,
+      id      : tag.opts.name ? tag.opts.name : `${tag.root.tagName.toLowerCase()}-${tag._riot_id}`,
       methods : assign(tag.actions || {}, {
-        update    : (options) => options || tag.state || tag.INIT_STATE,
+        update    : (options) => options || tag.state,
+        refresh   : () => tag.opts.state || tag.INIT_STATE,
         changeAttr: (options) => options.path ? set({}, options.path, options.value) : options.value
       }, tag.opts.actions),
       dispatch: STORE.dispatch
@@ -50,6 +51,8 @@ export default {
         tag.opts.onchange && tag.opts.onchange.call(tag, payload);
       });
     });
+
+    tag.refresh = ()=> tag.update({state: tag.opts.state || tag.INIT_STATE});
 
     tag.on('unmount', () => tag.unsubscribe());
   }
