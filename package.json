@@ -1,0 +1,28 @@
+{
+  "name": "riot-redux",
+  "version": "0.6.0",
+  "description": "Redux implementation for RiotJS",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thram/riot-redux.git"
+  },
+  "keywords": [
+    "riot-redux"
+  ],
+  "author": "Thram",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thram/riot-redux/issues"
+  },
+  "homepage": "https://github.com/Thram/riot-redux#readme",
+  "dependencies": {
+    "lodash": "^4.14.0",
+    "redux": "^3.5.2",
+    "redux-logger": "^2.6.1",
+    "redux-thunk": "^2.1.0"
+  }
+}
