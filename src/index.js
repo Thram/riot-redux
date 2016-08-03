@@ -14,7 +14,7 @@ export default {
     const reducer  = (state, action)=> {
       if (tag.reducer) action.payload = tag.reducer(state, action);
       if (tag.opts.reducer) action.payload = tag.opts.reducer(state, action);
-      return action.payload;
+      return action;
     };
     const STORE    = configureStore(tag.state, reducer);
 

@@ -23,5 +23,5 @@ export function defaultReducer(state, action) {
 }
 
 export function nextState(state, action) {
-  return action.payload ? assign(state, action.payload) : state;
+  return action.payload ? action.payload : state;
 }
