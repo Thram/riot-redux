@@ -1,4 +1,7 @@
 # riot-redux
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/Thram/riot-redux.svg)](https://greenkeeper.io/)
+
 Redux implementation for RiotJS as a Mixin
 
 Riot bindings for Redux. 
